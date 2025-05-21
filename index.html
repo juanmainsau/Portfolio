@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link href="./dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Insaurraldi Juan Manuel</title>
-    
-    <!-- Enlace a Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
-    
-    <!-- Enlace a tu hoja de estilos -->
-    <link rel="stylesheet" href="diseño.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="font-prompt bg-dark-bg text-white">
+
     <!-- Barra de herramientas -->
-    <header class="barra-herramientas">
-        <div class="contenedor-barra">
-            <img src="assets/icon.png" alt="Icono pequeño" class="icono">
-            <h1>Portfolio Insaurraldi Juan Manuel</h1>
-        </div>
+    <header class="fixed top-0 w-full bg-header-bg p-2 shadow-md flex items-center z-10">
+      <div class="flex items-center space-x-3">
+        <img src="img/logo.png" alt="Logo" class="w-[45px] h-[45px]" />
+        <h1 class="text-[18px] text-text-dark m-0">Mi Portfolio</h1>
+      </div>
     </header>
 
     <!-- Sección Presentación -->
-    <section class="presentacion">
-        <div class="contenedor">
-            <div class="foto">
-                <img src="assets/fotopresentacion.jpg" alt="Foto de perfil">
-            </div>
-            <div class="descripcion">
-                <h1>Un poco sobre mi</h1>
-                <p>Me presento, soy Juan Manuel Insaurraldi, estudiante de Analista en Sistemas de Computación de la Uniersidad Nacional de Misiones pronto a recibirme, busco orientar mis habilidades técnicas y de análisis para desempeñarme en el desarrollo de software participando en todas las fases de su ciclo de vida. La responsabilidad para asumir el rol y la motivacion para seguir capacitandome en nuevas tecnologías son mis principios fundamentales.</p>
-            </div>
+    <section class="pt-[70px] min-h-screen bg-presentation-gradient bg-[#989898] bg-blend-multiply flex flex-col justify-center items-center text-center px-[5%] py-[10vh]">
+      <div class="flex items-center justify-center max-w-[900px] mx-auto border border-[#555] rounded-[15px] bg-header-bg p-5">
+        <div class="foto">
+          <img src="img/perfil.jpg" alt="Foto de perfil" class="w-[150px] h-[150px] rounded-full mr-5" />
         </div>
+        <div class="descripcion text-left text-text-dark">
+          <h2 class="text-2xl mb-2">¡Hola! Soy Juanma</h2>
+          <p class="text-base leading-relaxed">
+            Soy desarrollador fullstack, entusiasta de la tecnología y apasionado por aprender. Este es mi portfolio, donde muestro mis habilidades, conocimientos y proyectos personales.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Sección About Me -->
-    <section class="about-me">
-        <h2>Aptitudes</h2>
-        <p>Estas son algunas de las tecnologías sobre las que tengo conocimientos.</p>
-        <div class="iconos">
-            <img src="assets/logo html.png" alt="Icono Tecnología 1">
-            <img src="assets/logo css.png" alt="Icono Tecnología 2">
-            <img src="assets/logo js.png" alt="Icono Tecnología 3">
-            <img src="assets/logo github.png" alt="Icono Tecnología 4">
-            <img src="assets/logo vsc.png" alt="Icono Tecnología 5">
-        </div>
+    <section class="bg-light-bg text-text-dark py-12 text-center">
+      <h2 class="text-2xl mb-4">Tecnologías que utilizo</h2>
+      <div class="iconos flex justify-center items-center flex-wrap gap-5">
+        <img src="img/html.png" alt="HTML" class="w-[70px] h-[70px] transition-transform duration-300 hover:scale-130" />
+        <img src="img/css.png" alt="CSS" class="w-[70px] h-[70px] transition-transform duration-300 hover:scale-130" />
+        <img src="img/js.png" alt="JavaScript" class="w-[70px] h-[70px] transition-transform duration-300 hover:scale-130" />
+        <img src="img/react.png" alt="React" class="w-[70px] h-[70px] transition-transform duration-300 hover:scale-130" />
+        <img src="img/node.png" alt="Node.js" class="w-[70px] h-[70px] transition-transform duration-300 hover:scale-130" />
+      </div>
     </section>
 
     <!-- Sección Cursos y Estudios -->
-    <section class="cursos-estudios">
-        <h2>Cursos Realizados y Estudios</h2>
-        <p>- Analista en Sistemas de Computación 90%</p>
-        <p>- Licenciatura en Sistemas de Información 60%</p>
+    <section class="bg-light-bg text-text-dark py-12 text-center">
+      <h2 class="text-2xl mb-4">Cursos y estudios</h2>
+      <p class="text-base leading-relaxed max-w-[900px] mx-auto">
+        Estudiante de Ingeniería en Telecomunicaciones. He realizado cursos de desarrollo web, programación y tecnologías modernas como React, Express y MySQL.
+      </p>
     </section>
 
     <!-- Sección Proyectos -->
-    <section class="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyecto">
-            <img src="assets/proyectoprox.png" alt="Proyecto">
-        </div>
+    <section class="bg-light-bg text-text-dark py-12 text-center">
+      <h2 class="text-2xl mb-6">Proyectos destacados</h2>
+      <div class="proyecto mb-8">
+        <img src="img/proyecto1.jpg" alt="Proyecto 1" class="w-[300px] mx-auto mb-2 rounded-[15px]" />
+        <p class="text-base">Sistema de venta de fotografías para carreras MTB (Resolana Fotografía).</p>
+      </div>
+      <div class="proyecto">
+        <img src="img/proyecto2.jpg" alt="Proyecto 2" class="w-[300px] mx-auto mb-2 rounded-[15px]" />
+        <p class="text-base">Gestor de tareas con autenticación y base de datos.</p>
+      </div>
     </section>
 
     <!-- Sección Contacto -->
-    <section class="contacto">
-        <h2>Contacto</h2>
-        <div class="iconos">
-            <a href="https://www.instagram.com/juanmainsau/" target="_blank">Instagram</a>
-            <a href="https://github.com/juanmainsau" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/juan-manuel-insaurraldi" target="_blank">LinkedIn</a>
-        </div>
+    <section class="bg-dark-bg text-white py-12 text-center">
+      <h2 class="text-2xl mb-4">Contacto</h2>
+      <div class="iconos flex justify-center gap-6">
+        <a href="https://github.com/tuusuario" target="_blank" class="text-white no-underline hover:underline">GitHub</a>
+        <a href="mailto:correo@ejemplo.com" class="text-white no-underline hover:underline">Correo</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="text-white no-underline hover:underline">LinkedIn</a>
+      </div>
     </section>
-</body>
-</html>
 
-<footer>
-    <p>&copy; 2025 Juan Manuel Insaurraldi. Todos los derechos reservados.</p>
-</footer>
+    <!-- Footer -->
+    <footer class="bg-darker-bg text-white text-center py-5">
+      <p class="text-sm">&copy; 2025 Juanma. Todos los derechos reservados.</p>
+    </footer>
+    
+  </body>
+</html>
