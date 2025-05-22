@@ -7,17 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-bg': '#333',
-        'darker-bg': '#222',
-        'light-bg': '#f4f4f4',
-        'header-bg': '#e7e7ed',
-        'text-dark': '#0f0f0a'
+        'dark-bg': '#333333',       // Más específico (6 dígitos)
+        'darker-bg': '#222222',     // Más específico
+        'light-bg': '#f4f4f4',      // Perfecto
+        'header-bg': '#e7e7ed',     // Perfecto
+        'text-dark': '#0f0f0a'      // Perfecto
+      },
+      fontFamily: {
+        sans: ['Prompt', 'sans-serif'], // Como fuente predeterminada
+        prompt: ['Prompt', 'sans-serif'] // También disponible como clase
       },
       backgroundImage: {
         'presentation-gradient': 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%)'
-      },
-      fontFamily: {
-        prompt: ['Prompt', 'sans-serif']
       },
       scale: {
         130: '1.3'
@@ -28,12 +29,10 @@ export default {
     }
   },
   safelist: [
-    'bg-dark-bg',
-    'bg-darker-bg',
-    'bg-light-bg',
-    'bg-header-bg',
-    'text-white',
-    'text-dark',
+    {
+      pattern: /(bg|text|border)-(dark-bg|darker-bg|light-bg|header-bg|dark)/,
+      variants: ['hover', 'focus']
+    },
     'font-prompt',
     'bg-presentation-gradient',
     'hover:scale-130',
